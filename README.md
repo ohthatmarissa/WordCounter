@@ -13,11 +13,12 @@ A program that uses the C# programming language and MStesting to allow a user to
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
 |**Program prompts user to enter a sentence**|
-| **Program recognizes when user enters a sentence**| Input: "The best place in Seattle to see cool dogs is GreenLake" | Output: "The best place in Seattle to see cool dogs is GreenLake"|
-|**I selected this input value because the program has to have a sentence to check to run**|
+| **Program recognizes when user enters a sentence**| Input: "Kittytopia is the best place to see kitties and find your kitty best friend!" | Output: "Kittytopia is the best place to see kitties and find your kitty best friend!"|
+|**I selected this input value because the program has to have a sentence to check to run, check for multiple occurrence, and that the word isn't counted within other words**|
 |**Program prompts user to enter a word to check to see if/how often it appears in their sentence**|
-| **Program recognizes when user enters a word and checks the sentence entered for occurrence** | User input: "Seattle" | Output: "Your word appears 1 time" |
-| **I selected this input value because the program has to have a word to check against the sentence to check for occurrence**|
+| **Program recognizes when user enters a word and checks the sentence entered for occurrence** | User input: "kitty" | Output: "Your word appears 1 time" |
+| **I selected this input value because the program has to have a word to check against the sentence to check for occurrence and to make sure it isn't counting words within other words**|
+
 
 
 
