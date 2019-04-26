@@ -9,7 +9,7 @@ namespace WordCounter.Tests
     [TestMethod]
     public void WordsConstructor_CreateInstanceOfWords_Words()
     {
-      Words newWords = new Words("test");
+      Words newWords = new Words(" ");
       Assert.AreEqual(typeof(Words), newWords.GetType());
     }
     [TestMethod]
@@ -30,14 +30,13 @@ namespace WordCounter.Tests
       string result = newWords.GetSentence();
       Assert.AreEqual(updatedSentence, result);
     }
-    // [TestMethod]
-    // public void Word_GetWord_String()
-    // {
-    //   string word = "kitty";
-    //   Words newWords = new Words(sentence);
-    //   string result = newWords.GetWord();
-    //   Assert.AreEqual(word, result)
-    //
-    // }
+    [TestMethod]
+    public void GetOneWord_ReturnsOneWord_String()
+    {
+      string oneWord = "kitty";
+      Words newWords = new Words(oneWord);
+      string result = newWords.GetOneWord();
+      Assert.AreEqual(oneWord, result);
+    }
   }
 }

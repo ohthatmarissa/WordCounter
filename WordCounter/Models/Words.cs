@@ -3,11 +3,12 @@ namespace WordCounter.Models
   public class Words
   {
     private string _sentence;
+    private string _oneWord;
 
     public Words (string sentence)
     {
       _sentence = sentence;
-      // _word = word;
+      // _oneWord = oneWord;
     }
     public string GetSentence()
     {
@@ -17,10 +18,10 @@ namespace WordCounter.Models
     {
       _sentence = newSentence;
     }
-    // public void GetWord()
-    // {
-    //   return _word;
-    // }
+    public string GetOneWord()
+    {
+      return _oneWord;
+    }
     // public void SetWord()
     // {
     //   _word = newWord;
