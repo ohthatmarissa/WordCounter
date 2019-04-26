@@ -12,7 +12,6 @@ A program that uses the C# programming language and MStesting to allow a user to
 ### Specs
 | Spec | Input | Output |
 | :-------------     | :------------- | :------------- |
-| **Homepage** | User accesses localhost:5004 | Homepage with user input form |
 |**Program prompts user to enter a sentence**|
 | **Program recognizes when user enters a sentence**| Input: "The best place in Seattle to see cool dogs is GreenLake" | Output: "The best place in Seattle to see cool dogs is GreenLake"|
 |**I selected this input value because the program has to have a sentence to check to run**|
