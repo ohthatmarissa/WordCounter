@@ -14,6 +14,19 @@ namespace WordCounter.Tests
       string oneWord = "kitty";
       Words newWords = new Words(sentence, oneWord);
       Assert.AreEqual(typeof(Words), newWords.GetType());
+    }
+      [TestMethod]
+      public void SetSentenceAndOneWord_SetSentenceAndOneWord_String()
+      {
+        string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend!";
+        string oneWord = "kitty";
+        Words newWords = new Words(sentence, oneWord);
+        string newSentence = "Puppytopia is the best place to see puppies and find your puppy best friend";
+        string newOneWord = "puppy";
+        newWords.SetSentenceAndOneWord(newSentence, newOneWord);
+        string result = newWords.WordsConstructor();
+        Assert.AreEqual(newSentence, newOneWord, result);
+      }
     // }
     // [TestMethod]
     // public void GetSentence_ReturnsSentence_String()
@@ -40,6 +53,6 @@ namespace WordCounter.Tests
     //   Words newWords = new Words(oneWord);
     //   string result = newWords.GetOneWord();
     //   Assert.AreEqual(oneWord, result);
-    }
+
   }
 }

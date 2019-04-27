@@ -16,10 +16,11 @@ namespace WordCounter.Models
     // {
     //   return _sentence;
     // }
-    // public void SetSentence(string newSentence)
-    // {
-    //   _sentence = newSentence;
-    // }
+    public void SetSentenceAndOneWord(string newSentence, string newOneWord)
+    {
+      _sentence = newSentence;
+      _oneWord = newOneWord;
+    }
     // public string GetOneWord()
     // {
     //   return _oneWord;
