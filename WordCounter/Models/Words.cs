@@ -1,3 +1,5 @@
+using System;
+
 namespace WordCounter.Models
 {
   public class Words
@@ -5,23 +7,23 @@ namespace WordCounter.Models
     private string _sentence;
     private string _oneWord;
 
-    public Words (string sentence)
+    public Words (string sentence, string oneWord)
     {
       _sentence = sentence;
-      // _oneWord = oneWord;
+      _oneWord = oneWord;
     }
-    public string GetSentence()
-    {
-      return _sentence;
-    }
-    public void SetSentence(string newSentence)
-    {
-      _sentence = newSentence;
-    }
-    public string GetOneWord()
-    {
-      return _oneWord;
-    }
+    // public string GetSentence()
+    // {
+    //   return _sentence;
+    // }
+    // public void SetSentence(string newSentence)
+    // {
+    //   _sentence = newSentence;
+    // }
+    // public string GetOneWord()
+    // {
+    //   return _oneWord;
+    // }
     // public void SetWord()
     // {
     //   _word = newWord;
