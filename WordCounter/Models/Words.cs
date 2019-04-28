@@ -41,23 +41,5 @@ namespace WordCounter.Models
       return count;
     }
 
-    // public string GetSentence()
-    // {
-    //   return _sentence;
-    // }
-    // public void SetSentenceAndOneWord(string newSentence, string newOneWord)
-    // {
-    //   _sentence = newSentence;
-    //   _oneWord = newOneWord;
-    // }
-    // public string GetOneWord()
-    // {
-    //   return _oneWord;
-    // }
-    // public void SetWord()
-    // {
-    //   _word = newWord;
-    // }
-
   }
 }
