@@ -17,10 +17,11 @@ namespace WordCounter.Models
       _array = sentence.Split(' ');
     }
 
-    // public string TurnWordsToUpper()
-    // {
-    //   return upper;
-    // }
+    public string TurnWordsToUpper(string sentence, string oneWord)
+    {
+      return _sentence.ToUpper();
+      return _oneWord.ToUpper();
+    }
 
     public string[] TurnToArray()
     {

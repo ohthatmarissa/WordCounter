@@ -16,15 +16,15 @@ namespace WordCounter.Tests
       Words newWords = new Words(sentence, oneWord);
       Assert.AreEqual(typeof(Words), newWords.GetType());
     }
-    // [TestMethod]
-    // public void TurnWordsToUpper_TurnWordsToUpper_UpperCaseString()
-    // {
-    //   string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend";
-    //   string oneWord = "kitty";
-    //   string upper = "KITTYTOPIA IS THE BEST PLACE TO SEE KITTIES AND FIND YOUR KITTY BEST FRIEND";
-    //   Words newWords = new Words(sentence, oneWord);
-    //   Assert.AreEqual(upper, newWords.TurnWordsToUpper());
-    // }
+    [TestMethod]
+    public void TurnWordsToUpper_TurnWordsToUpper_UpperCaseString()
+    {
+      string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend";
+      string oneWord = "kitty";
+      string upper = "KITTYTOPIA IS THE BEST PLACE TO SEE KITTIES AND FIND YOUR KITTY BEST FRIEND";
+      Words newWords = new Words(sentence, oneWord);
+      Assert.AreEqual(upper, newWords.TurnWordsToUpper(sentence, oneWord));
+    }
 
     [TestMethod]
     public void TurnToArray_TurnToArray_Array()
