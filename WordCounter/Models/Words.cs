@@ -12,9 +12,9 @@ namespace WordCounter.Models
 
     public Words(string fullSentence, string wordToMatch)
     {
-      _sentence = fullSentence;
-      _oneWord = wordToMatch;
-      _array = fullSentence.Split(' ');
+      _sentence = fullSentence.ToUpper();
+      _oneWord = wordToMatch.ToUpper();
+      _array = _sentence.Split(' ');
 
     }
 
