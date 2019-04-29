@@ -10,20 +10,30 @@ namespace WordCounter.Models
     private string[] _array;
 
 
-    public Words (string sentence, string oneWord)
+    public Words(string fullSentence, string wordToMatch)
     {
-      _sentence = sentence;
-      _oneWord = oneWord;
-      _array = sentence.Split(' ');
+      _sentence = fullSentence;
+      _oneWord = wordToMatch;
+      _array = fullSentence.Split(' ');
+
     }
 
-    public string TurnWordsToUpper(string sentence, string oneWord)
+    public string GetSentence()
     {
-      return _sentence.ToUpper();
-      return _oneWord.ToUpper();
+      return _sentence;
     }
 
-    public string[] TurnToArray()
+    public string GetOneWord()
+    {
+      return _oneWord;
+    }
+
+    public void SetOneWord(string newOneWord)
+    {
+      _oneWord = newOneWord;
+    }
+
+    public string[] GetArray()
     {
       return _array;
     }

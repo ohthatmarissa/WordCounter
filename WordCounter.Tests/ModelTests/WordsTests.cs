@@ -14,26 +14,21 @@ namespace WordCounter.Tests
       string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend";
       string oneWord = "kitty";
       Words newWords = new Words(sentence, oneWord);
+      //Asserts that the constructor returns an object with type Words
       Assert.AreEqual(typeof(Words), newWords.GetType());
-    }
-    [TestMethod]
-    public void TurnWordsToUpper_TurnWordsToUpper_UpperCaseString()
-    {
-      string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend";
-      string oneWord = "kitty";
-      string upper = "KITTYTOPIA IS THE BEST PLACE TO SEE KITTIES AND FIND YOUR KITTY BEST FRIEND";
-      Words newWords = new Words(sentence, oneWord);
-      Assert.AreEqual(upper, newWords.TurnWordsToUpper(sentence, oneWord));
-    }
 
-    [TestMethod]
-    public void TurnToArray_TurnToArray_Array()
-    {
-      string sentence = "Kittytopia is the best place to see kitties and find your kitty best friend";
-      string oneWord = "kitty";
-      string[] result = new string[] {"Kittytopia", "is", "the", "best", "place", "to", "see", "kitties", "and", "find", "your", "kitty", "best", "friend"};
-      Words newWords = new Words(sentence, oneWord);
-      CollectionAssert.AreEqual(result, newWords.TurnToArray());
+      //Asserts that the constructor is properly setting the sentence property
+      string result = newWords.GetSentence();
+      Assert.AreEqual(sentence, result);
+
+      //Asserts that the constructor is properly setting the oneWord property
+      string resultOneWord = newWords.GetOneWord();
+      Assert.AreEqual(oneWord, resultOneWord);
+
+      //Assert that the constructor is properly computing the array property
+      string[] expectedArray = sentence.Split(' ');
+      string[] resultArray = newWords.GetArray();
+      CollectionAssert.AreEqual(expectedArray, resultArray);
     }
 
     [TestMethod]
